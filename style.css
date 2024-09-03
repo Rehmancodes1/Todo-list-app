@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    width: 40vw;
+    color: #9E9D9D;
+    background-color: #151515;
+    margin: 20vh auto;
+    border-radius: 10px;
+    box-shadow: 5px 10px 5px rgba(1, 1, 1, 0.1);
+    z-index: 10;
+}
+
+.content {
+    padding: 5%;
+}
+
+.content h1 {
+    text-align: center;
+    margin: 5px 0 20px 0;
+    font-weight: 500;
+   letter-spacing:  6px;
+   font-size: 2.5rem;
+   color: white;
+}
+
+.addtask {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3vw;
+    margin-bottom: 30px;
+}
+
+.addtask input {
+    font-size: 1rem;
+    padding: 10px;
+    flex-basis: 78%;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    background-color: #252525;
+    color: #9E9D9D;
+}
+
+.addtask button {
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    padding: 5px;
+    background-color: #0AB6AB;
+    color: #ffff;
+    cursor: pointer;
+    flex-basis: 18%;
+
+}
+.content span{
+    margin: 25px 3vw;
+    display: block;
+}
+.list hr {
+    margin: 25px 3vw;
+}
+
+.content p {
+    position: relative;
+    margin: 25px 3vw;
+    font-size: 18px;
+    padding: 3vh 10px;
+    border-radius: 5px;
+    background: #252525;
+}
+.content p > i {
+    position: absolute;
+    right: 15px;
+    font-size: 2rem;
+    top: 20px;
+    cursor: pointer;
+}
+
+
+/* responsive design */
+
+@media screen and (max-width:1250px){
+    .content {
+        padding: 15px 1%;
+    }
+}
+@media screen and (max-width:1050px){
+    .container {
+        width: 50vw;
+    }
+}
+@media screen and (max-width:840px){
+    .container {
+        width: 60vw;
+    }
+}
+@media screen and (max-width:700px){
+    .container {
+        width: 70vw;
+    }
+}
+@media screen and (max-width:580px){
+    .container {
+        width: 80vw;
+    }
+}
+@media screen and (max-width:500px){
+    .container {
+        width: 90vw;
+    }
+    .list hr {
+        margin: 20px 3vw;
+    }
+    .addtask input {
+        flex-basis: 75%;
+    }
+    .addtask button {
+        flex-basis: 23%;
+    }
+}
+@media screen and (max-width:350px){
+    .addtask input {
+        flex-basis: 60%;
+    }
+    .addtask button {
+        flex-basis: 20%;
+    }
+}
+.left {
+    background-color: rgb(10, 182, 171);
+    height: 1500px;
+    width: 2033px;
+    position: absolute;
+    top: -836px;
+    left: -757px;
+    border-radius: 50%;
+    z-index: -1;
+}
+.right{
+    background-color: #151515;
+    height: 1000px ;
+    width: 1000px;
+    border-radius: 50%;
+    position: absolute;
+    top: -500px;
+    right: -500px;
+    z-index: -1;
+}
